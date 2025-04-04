@@ -109,25 +109,38 @@
     rowMeans(matriz)
    ```
 ## Términos
-### 1. **Data Frame**: 
+### 19. **Data Frame**: 
 Estructura de datos bidimensional para almacenar datos en forma de tabla.
-### 2. **Vector**: 
+
+Creación de un Data Frame
+```
+datos <- data.frame(
+  Nombre = c("Ana", "Luis", "María"),
+  Edad = c(23, 30, 27),
+  Ciudad = c("San José", "Alajuela", "Cartago")
+)
+```
+Ver el contenido del Data Frame
+```
+print(datos)
+```
+### 20. **Vector**: 
 Estructura de datos básica en R para almacenar múltiples valores del mismo tipo.
-### 3. **Lista**: 
+### 21. **Lista**: 
 Estructura de datos que puede almacenar diferentes tipos de objetos.
-### 4. **Matriz (Matrix)**: 
+### 22. **Matriz (Matrix)**: 
 Estructura bidimensional de datos homogéneos.
-### 5. **NA**: 
+### 23. **NA**: 
 Representa valores perdidos o faltantes.
-### 6. **Environment**: 
+### 24. **Environment**: 
 Espacio de trabajo donde se almacenan objetos en R.
-### 7. **Package**: 
+### 25. **Package**: 
 Conjunto de funciones, datos y documentación adicional.
-### 8. **Plot**: 
+### 26. **Plot**: 
 Representación gráfica de datos.
-### 9. **Workspace**: 
+### 27. **Workspace**: 
 Memoria activa que contiene los objetos creados.
-### 10. **Console**: 
+### 28. **Console**: 
 Área de la interfaz para ejecutar comandos en R.
-### 11. **Base R**: 
+### 29. **Base R**: 
 Conjunto principal de funciones incluidas en R.
