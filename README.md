@@ -190,3 +190,44 @@ Mostrar el Data Frame
 ```
 print(datos)
 ```
+### 23. **Matriz (Matrix)**: 
+Valor o conjunto de valores que se almacenan en memoria para ser utilizados en cálculos o análisis.
+Asignar un valor a una variable
+```
+x <- 5  # 'x' contiene el valor numérico 5
+```
+Asignar un vector a una variable
+```
+mi_vector <- c(1, 2, 3, 4, 5)
+```
+Asignar texto a una variable
+```
+saludo <- "Hola Mundo"
+```
+Mostrar las variables
+```
+print(x)
+print(mi_vector)
+print(saludo)
+```
+### 24. **Package**: 
+Conjunto de funciones, datos y documentación adicional.
+Instalar y luego llamar un paquete 
+```
+install.packages("ggplot2")
+library(ggplot2)
+```
+### 25. **Environment**: 
+Espacio de trabajo donde se almacenan los objetos creados (como variables, funciones, etc.).
+Crear un nuevo environment
+```
+mi_entorno <- new.env()
+```
+Asignar un objeto al nuevo environment
+```
+assign("x", 42, envir = mi_entorno)
+```
+Acceder al objeto dentro del nuevo environment
+```
+mi_entorno$x
+```
