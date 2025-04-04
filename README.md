@@ -126,6 +126,7 @@ print(datos)
 ```
 ### 20. **Vector**: 
 Estructura de datos básica en R para almacenar múltiples valores del mismo tipo.
+
 Crear un vector numérico
 ```
 numeros <- c(1, 2, 3, 4, 5)
@@ -146,6 +147,7 @@ print(logicos)
 ```
 ### 21. **Lista**: 
 Estructura de datos que puede almacenar diferentes tipos de objetos.
+
 Crear una lista con diferentes tipos de datos
 ```
 mi_lista <- list(
@@ -178,6 +180,7 @@ print(mi_lista$texto)
 ```
 ### 22. **Matriz (Matrix)**: 
 Estructura bidimensional de datos homogéneos.
+
 Crear un Data Frame
 ```
 datos <- data.frame(
@@ -190,8 +193,9 @@ Mostrar el Data Frame
 ```
 print(datos)
 ```
-### 23. **Matriz (Matrix)**: 
+### 23. **Variable**: 
 Valor o conjunto de valores que se almacenan en memoria para ser utilizados en cálculos o análisis.
+
 Asignar un valor a una variable
 ```
 x <- 5  # 'x' contiene el valor numérico 5
@@ -212,6 +216,7 @@ print(saludo)
 ```
 ### 24. **Package**: 
 Conjunto de funciones, datos y documentación adicional.
+
 Instalar y luego llamar un paquete 
 ```
 install.packages("ggplot2")
@@ -219,6 +224,7 @@ library(ggplot2)
 ```
 ### 25. **Environment**: 
 Espacio de trabajo donde se almacenan los objetos creados (como variables, funciones, etc.).
+
 Crear un nuevo environment
 ```
 mi_entorno <- new.env()
