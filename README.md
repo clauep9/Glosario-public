@@ -86,13 +86,13 @@
    ```
 ### 15. **`tolower()`**  
    Convierte texto a minúsculas:  
-    ```
+   ```
     texto <- "Hola Mundo"
     tolower(texto)
-    ```
+   ```
 ### 16. **`toupper()`**  
    Convierte texto a mayúsculas:  
-    ```R
+   ```
     texto <- "Hola Mundo"
     toupper(texto)
-    ```
+   ```
