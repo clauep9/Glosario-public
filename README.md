@@ -109,14 +109,25 @@
     rowMeans(matriz)
    ```
 ## Términos
-### 1. **Data Frame**: Estructura de datos bidimensional para almacenar datos en forma de tabla.
-### 2. **Vector**: Estructura de datos básica en R para almacenar múltiples valores del mismo tipo.
-### 3. **Lista**: Estructura de datos que puede almacenar diferentes tipos de objetos.
-### 4. **Matriz (Matrix)**: Estructura bidimensional de datos homogéneos.
-### 5. **NA**: Representa valores perdidos o faltantes.
-### 6. **Environment**: Espacio de trabajo donde se almacenan objetos en R.
-### 7. **Package**: Conjunto de funciones, datos y documentación adicional.
-### 8. **Plot**: Representación gráfica de datos.
-### 9. **Workspace**: Memoria activa que contiene los objetos creados.
-### 10. **Console**: Área de la interfaz para ejecutar comandos en R.
-### 11. **Base R**: Conjunto principal de funciones incluidas en R.
+### 1. **Data Frame**: 
+Estructura de datos bidimensional para almacenar datos en forma de tabla.
+### 2. **Vector**: 
+Estructura de datos básica en R para almacenar múltiples valores del mismo tipo.
+### 3. **Lista**: 
+Estructura de datos que puede almacenar diferentes tipos de objetos.
+### 4. **Matriz (Matrix)**: 
+Estructura bidimensional de datos homogéneos.
+### 5. **NA**: 
+Representa valores perdidos o faltantes.
+### 6. **Environment**: 
+Espacio de trabajo donde se almacenan objetos en R.
+### 7. **Package**: 
+Conjunto de funciones, datos y documentación adicional.
+### 8. **Plot**: 
+Representación gráfica de datos.
+### 9. **Workspace**: 
+Memoria activa que contiene los objetos creados.
+### 10. **Console**: 
+Área de la interfaz para ejecutar comandos en R.
+### 11. **Base R**: 
+Conjunto principal de funciones incluidas en R.
