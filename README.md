@@ -126,21 +126,67 @@ print(datos)
 ```
 ### 20. **Vector**: 
 Estructura de datos básica en R para almacenar múltiples valores del mismo tipo.
+Crear un vector numérico
+```
+numeros <- c(1, 2, 3, 4, 5)
+```
+Crear un vector de caracteres
+```
+nombres <- c("Ana", "Luis", "María")
+```
+Crear un vector lógico
+```
+logicos <- c(TRUE, FALSE, TRUE)
+```
+Imprimir los vectores
+```
+print(numeros)
+print(nombres)
+print(logicos)
+```
 ### 21. **Lista**: 
 Estructura de datos que puede almacenar diferentes tipos de objetos.
+Crear una lista con diferentes tipos de datos
+```
+mi_lista <- list(
+  numeros = c(1, 2, 3, 4),
+  texto = "Hola Mundo",
+  logicos = c(TRUE, FALSE, TRUE),
+  matriz = matrix(1:4, nrow = 2)
+)
+```
+Imprimir la lista completa
+```
+print(mi_lista)
+```
+Acceder a un elemento por su nombre
+```
+mi_lista$numeros  # Devuelve el vector 'numeros'
+```
+Acceder a un elemento por su posición
+```
+mi_lista[[2]]  # Devuelve el segundo elemento ('Hola Mundo')
+```
+Acceder a un subelemento dentro de un elemento
+```
+mi_lista$matriz[1, 2]  # Devuelve el valor en la primera fila, segunda columna de la matriz
+```
+Modificar un elemento de la lista
+```
+mi_lista$texto <- "Nuevo texto"
+print(mi_lista$texto)
+```
 ### 22. **Matriz (Matrix)**: 
 Estructura bidimensional de datos homogéneos.
-### 23. **NA**: 
-Representa valores perdidos o faltantes.
-### 24. **Environment**: 
-Espacio de trabajo donde se almacenan objetos en R.
-### 25. **Package**: 
-Conjunto de funciones, datos y documentación adicional.
-### 26. **Plot**: 
-Representación gráfica de datos.
-### 27. **Workspace**: 
-Memoria activa que contiene los objetos creados.
-### 28. **Console**: 
-Área de la interfaz para ejecutar comandos en R.
-### 29. **Base R**: 
-Conjunto principal de funciones incluidas en R.
+Crear un Data Frame
+```
+datos <- data.frame(
+  Nombre = c("Ana", "Luis", "María"),
+  Edad = c(23, 30, 27),
+  Ciudad = c("San José", "Alajuela", "Cartago")
+)
+```
+Mostrar el Data Frame
+```
+print(datos)
+```
