@@ -237,3 +237,131 @@ Acceder al objeto dentro del nuevo environment
 ```
 mi_entorno$x
 ```
+## Funciones comunes en GGPLOT
+### 26. ** library()**:
+Activa el paquete ggplot2.
+```
+library(ggplot2)
+```
+### 27. **ggplot()**:
+Crea la estructura base del gráfico.
+```
+ggplot(data = dataframe, aes(x = gene, y = expression)) + geom_point()
+```
+### 28. **aes()**:
+Define el mapeo estético entre variables.
+```
+aes(x = gene_length, y = mutation_rate, color = tissue_type)
+```
+### 29. **geom_point()**:
+Crea un gráfico de dispersión.
+```
+ggplot(dataframe, aes(x = age, y = gene_expression)) + geom_point()
+```
+### 30. **geom_bar()**:
+Genera un gráfico de barras.
+```
+ggplot(dataframe, aes(x = cancer_type)) + geom_bar()
+```
+
+### 31. **geom_line()**:
+Dibuja líneas para datos continuos.
+```
+ggplot(dataframe, aes(x = time, y = cell_count, color = treatment)) + geom_line()
+```
+### 32. **geom_boxplot()**: 
+Crea un diagrama de caja para comparar grupos.
+```
+ggplot(dataframe, aes(x = group, y = gene_expression)) + geom_boxplot()
+```
+### 33. **geom_histogram()**:
+Construye un histograma.
+```
+ggplot(dataframe, aes(x = gene_length)) + geom_histogram(bins = 30)
+```
+### 34. **geom_smooth()**:
+Añade líneas de ajuste, como regresiones.
+```
+ggplot(dataframe, aes(x = age, y = gene_expression)) + geom_smooth(method = "lm")
+```
+### 35. **labs()**
+Agrega títulos y etiquetas.
+```
+labs(title = "Expresión génica por edad", x = "Edad", y = "Expresión")
+```
+### 36. **theme_minimal()**:
+Aplica un tema minimalista, es decir, elimina elementos visuales innecesarios para destacar los datos relevantes.
+```
+ggplot(dataframe, aes(x = var1, y = var2)) + geom_point() + theme_minimal()
+```
+### 37. **scale_color_manual()**:
+Define colores personalizados.
+```
+scale_color_manual(values = c("red", "blue"))
+```
+### 38. **facet_wrap()**:
+Divide gráficos según una variable categórica.
+```
+facet_wrap(~ tissue_type)
+```
+### 39. **facet_grid()**:
+Organiza gráficos en una cuadrícula basada en dos variables.
+```
+facet_grid(rows = vars(treatment), cols = vars(cancer_stage))
+```
+### 40. **coord_flip()**:
+Invierte los ejes para gráficos horizontales.
+```
+ggplot(dataframe, aes(x = cancer_type, y = sample_count)) + geom_bar(stat = "identity") + coord_flip()
+```
+### 41. **geom_density()**:
+Visualiza la densidad de datos.
+```
+ggplot(dataframe, aes(x = gene_length)) + geom_density()
+```
+### 42. **scale_x_log10()**:
+Aplica una escala logarítmica al eje x.
+```
+ggplot(dataframe, aes(x = gene_length, y = mutation_rate)) + geom_point() + scale_x_log10()
+```
+### 43. **scale_y_continuous()**:
+Ajusta el rango del eje y.
+```
+scale_y_continuous(limits = c(0, 100))
+```
+
+### 44. **geom_violin()**:
+Crea diagramas de violín.
+```
+ggplot(dataframe, aes(x = group, y = expression)) + geom_violin()
+```
+### 45. **theme()**:
+Personaliza elementos gráficos.
+```
+theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
+### 46. **ggsave()**:
+Guarda el gráfico en un archivo.
+```
+ggsave("grafico.pdf", width = 10, height = 8)
+```
+### 47. **geom_tile()**:
+Crea mapas de calor.
+```
+ggplot(dataframe, aes(x = gene, y = sample, fill = expression)) + geom_tile()
+```
+### 48. **stat_summary()**:
+Resume y visualiza estadísticas.
+```
+ggplot(dataframe, aes(x = treatment, y = expression)) + stat_summary(fun = mean, geom = "bar")
+```
+### 49. **element_blank()**:
+Oculta elementos del gráfico.
+```
+theme(axis.title.y = element_blank())
+```
+### 50. **annotate()**:
+Añade anotaciones al gráfico.
+```
+annotate("text", x = 10, y = 20, label = "Nota importante", color = "red")
+```
